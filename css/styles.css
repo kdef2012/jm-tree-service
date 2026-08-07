@@ -175,7 +175,7 @@ ul {
     background-color: rgba(255, 255, 255, 0.98);
     z-index: 1000;
     box-shadow: var(--shadow-sm);
-    padding: 16px 0;
+    padding: 0;
     transition: all var(--transition-normal);
 }
 
@@ -200,7 +200,7 @@ ul {
 }
 
 .navbar .brand-logo {
-    height: 100px; /* Large, but stays fully inside the header */
+    height: 120px; /* Logo touches the absolute top and bottom of the header */
     width: auto;
     mix-blend-mode: multiply; /* Removes the white background */
     filter: contrast(1.05); /* Helps ensure pure white disappears */
@@ -216,6 +216,7 @@ ul {
 .nav-links {
     display: flex;
     gap: 32px;
+    padding-bottom: 24px; /* Keeps links from touching the exact bottom edge */
 }
 
 .nav-links a {
@@ -231,6 +232,7 @@ ul {
 .nav-actions {
     display: flex;
     gap: 16px;
+    padding-bottom: 20px; /* Keeps buttons from touching the exact bottom edge */
 }
 
 /* ==========================================================================
